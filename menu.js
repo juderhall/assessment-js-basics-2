@@ -187,8 +187,16 @@ console.log(filteredFood)
     Return the filtered array from the entire function
 */
 
-//CODE HERE
-
+function filterByProperty(property, type, num) {
+    if (type != "Above" || "Below") {
+        console.log("Invalid Type")
+    }
+    if (type === "Above") {
+        return pizza => pizza.property > num
+    } else { 
+        return pizza => pizza.property < num
+    }
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -197,4 +205,5 @@ console.log(filteredFood)
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+const filteredFood2 = foodArr.filter(filterByProperty('rating', "Above", 1))
+console.log(filteredFood2)
