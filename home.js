@@ -75,7 +75,18 @@ canWeDeliver(84103)
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+function canWeDeliverLoop(zipCode) {
+    doWeDeliver = "We do not deliver to your zip code."     
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++) { 
+        if (zipCode === deliveryAreaZipCodes[i]) {          
+           doWeDeliver = "We deliver to your zip code."     
+        }
+    }
+    console.log(doWeDeliver)                                
+}
+
+canWeDeliver(84103)
+canWeDeliver(85205)
 
 //////////////////PROBLEM 3////////////////////
 /* 

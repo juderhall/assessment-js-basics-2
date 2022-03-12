@@ -30,9 +30,14 @@
     'kids'
 */
 
-//CODE HERE
-
-
+const pizza = {
+        name: 'BBQ',
+        price: 10,
+        category: 'Entree',
+        popularity: 4,
+        rating: 1,
+        tags: ['Vegan', '8 Inch']
+    }
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -42,8 +47,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -52,18 +56,16 @@
     get the value.
 */
 
-//CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
     pizza object.
-    
     Print the value of your new price variable.
 */
 
-//CODE HERE
-
+let {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -72,8 +74,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
-
+let {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -87,9 +89,48 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
-
-
+const foodArr = [
+    {
+        name: 'BBQ',
+        price: 10,
+        category: 'Entree',
+        popularity: 5,
+        rating: 3,
+        tags: ['Vegan', '8 Inch']
+    },
+    {
+        name: 'Pepperoni',
+        price: 10,
+        category: '2nd Entree',
+        popularity: 4,
+        rating: 5,
+        tags: ['Vegan', '10 Inch']
+    },
+    {
+        name: 'Cheese',
+        price: 10,
+        category: '2nd Appetizer',
+        popularity: 3,
+        rating: 4,
+        tags: ['Vegan', '12 Inch']
+    },
+    {
+        name: 'Spinach',
+        price: 10,
+        category: 'Desert',
+        popularity: 1,
+        rating: 2,
+        tags: ['Vegan', '14 Inch']
+    },
+    {
+        name: 'Skillet',
+        price: 10,
+        category: 'Appetizer',
+        popularity: 2,
+        rating: 1,
+        tags: ['Vegan', '16 Inch']
+    }
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -103,11 +144,9 @@
     your food objects has.
 */
 
-//CODE HERE
+const filteredFood = foodArr.filter(pizza => pizza.popularity > 3)
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
