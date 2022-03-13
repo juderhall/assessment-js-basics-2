@@ -21,8 +21,6 @@
 
 //CODE HERE
 
-
-
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -42,7 +40,6 @@
 
 //CODE HERE
 
-
 /*
     Make a copy of the empOne object
     using the spread operator.
@@ -56,8 +53,6 @@
 */
 
 //CODE HERE
-
-
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -84,8 +79,6 @@
 
 //CODE HERE
 
-
-
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
@@ -98,7 +91,6 @@
 */
 
 //CODE HERE
-
 
 /*
     Call the `getEmployees` method on the
