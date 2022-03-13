@@ -33,10 +33,8 @@ const cart = [
     }
 ]
 
-//CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = cart.reduce((total, cart) => {return total + cart.price}, 0)
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -53,9 +51,14 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    tax += 1
+    cartTotal *= tax
+    cartTotal -= couponValue
+    return cartTotal
+}
 
-
+console.log(calcFinalPrice(summedPrice, 10, .06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -78,7 +81,11 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+    Customer Object:
+    age: number, access to senior or kids menu
+    name: String, to call out when seating is ready
+    reservation : boolean, check an array of resvervations
+    billSplit: number, to divide total bill by
 
 */
 
@@ -87,4 +94,9 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+    age: 28, 
+    name: 'Jude', 
+    reservation : true, 
+    billSplit: .5, 
+}

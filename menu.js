@@ -144,7 +144,7 @@ const foodArr = [
     your food objects has.
 */
 
-const filteredFood = foodArr.filter(pizza => pizza.popularity > 3)
+const filteredFood = foodArr.filter(element => element.popularity > 3)
 
 console.log(filteredFood)
 
@@ -188,7 +188,7 @@ console.log(filteredFood)
 */
 
 function filterByProperty(property, type, num) {
-    if (type != "Above" || "Below") {
+    if (type != 'Above' || 'Below') {
         console.log("Invalid Type")
     }
     if (type === "Above") {
@@ -205,5 +205,5 @@ function filterByProperty(property, type, num) {
     You'll have to console.log to see the filtered array
 */
 
-const filteredFood2 = foodArr.filter(filterByProperty('rating', "Above", 1))
+const filteredFood2 = foodArr.filter(filterByProperty('rating', 'Above', 1))
 console.log(filteredFood2)
